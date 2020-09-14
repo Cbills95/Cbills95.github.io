@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Christian's Super Shweet Website</title>
-            <style>
+            <style type="text/css">
                 body {
                     background: rgb(120, 20, 205);
                     color: rgb(45, 45, 45);
@@ -53,58 +53,49 @@
                      border: 6px dashed rgb(5, 238, 219);
                      border-radius: 120px 10px 10px 120px;
                 }
-                .sidebar {
-                    margin-right: 25px;
-                    padding: 10px;
-                }
-                .sidebar img {
-                    width: 200px;
-                     border: 3px solid black;
-                     border-radius: 100px;
-                }
                 .content {
                     flex: 1;
                     padding: 15px;
                 }
-                .interests header {
-                    font-size: 1.25em;
+                
+                    /* portfolio styles */
+                #portfolio {
+                    list-style-type: none;
+                    padding-left: 0;
                 }
-            </style>
+                #portfolio li {
+                    background: #fff;
+                    padding: 10px;
+                    border-radius: 10px;
+                    margin-bottom: 10px;
+                }
+                #portfolio li:hover {
+                    background: #eee;
+                }
+                #portfolio a {
+                    text-decoration: none;
+                    color: #454545;
+                }
+           </style>
     </head>
     
- <body>
-    <div id="all-contents"> 
-        <nav>
+    <body>
+        <div id="all-contents">
+         <nav>
             <header>Christian's Super Shweet Website</header>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="studies.html">Studies</a></li>
             </ul>
-        </nav>
-
-        <main>
-            <div class="sidebar">
-              <img src="">
-            </div>
-
+         </nav>
+           <main>
             <div class="content">
-              <header>
-                  Christian Billingsley
-              </header>
-              <p>
-                  Student at Operation Spark
-              </p>
-                    <section class="interests">
-                        <header>Interests</header>
-                        <ul>
-                            <li>Video Games</li>
-                            <li>Pho</li>
-                            <li>Hanging with friends</li>
-                        </ul>
-                    </section>
+                <h1>Portfolio</h1>
+                <ul id="portfolio">
+                </ul>
             </div>
-        </main>
-    </div>
-</body>
+           </main>
+        </div>
+    </body>
 </html>
